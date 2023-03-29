@@ -32,6 +32,7 @@ func handle_death():
 	ani.play(entity_name + "_dead")
 	if(find_node("Area2D")!=null):
 		z_index = 0 # put zombie under other zombies
+		Game.point += 10 #soma mais 10 ao matar um zumbir
 		find_node("Area2D").queue_free()
 	pass
 	
