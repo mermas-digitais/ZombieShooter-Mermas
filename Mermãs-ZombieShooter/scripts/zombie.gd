@@ -31,6 +31,9 @@ func handle_movement():
 	if(global_position.distance_to(player.global_position) < 50):
 		if(player.can_hurt):
 			player.do_hurt()
+			if(Game.point>0):
+				Game.point -= 5			#se ele se lesionar perde 5
+				
 	
 func moan_timeout():
 	if(life > 0):
