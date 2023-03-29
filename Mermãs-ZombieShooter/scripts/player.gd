@@ -17,8 +17,8 @@ func handle_movement():
 	#angle towards the cursor while alive
 	look_at(get_global_mouse_position())
 	
-	var move_hori = (int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))) * move_speed
-	var move_vert = (int(Input.is_action_pressed("down")) - int(Input.is_action_pressed("up"))) * move_speed
+	var move_hori = (int(Input.is_action_pressed("d")) - int(Input.is_action_pressed("a"))) * move_speed
+	var move_vert = (int(Input.is_action_pressed("s")) - int(Input.is_action_pressed("w"))) * move_speed
 	global_position.x += move_hori
 	global_position.y += move_vert
 	
@@ -41,13 +41,13 @@ func throw_granade():
 	get_parent().add_child(granade)
 
 func handle_shooting():
-	if(Input.is_action_just_pressed("granade")):
+	if(Input.is_action_just_pressed("mb_right")):
 		throw_granade()
 		
-	if(Input.is_action_just_pressed("shot")):
+	if(Input.is_action_just_pressed("mb_left")):
 		do_shot()
 		
-	if(Input.is_action_pressed("shot") and Input.is_action_pressed("shift")):
+	if(Input.is_action_pressed("mb_left") and Input.is_action_pressed("shift")):
 		do_shot()
 		
 	
