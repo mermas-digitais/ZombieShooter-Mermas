@@ -17,8 +17,8 @@ func handle_movement():
 	#angle towards the cursor while alive
 	look_at(get_global_mouse_position())
 	
-	var move_hori = (int(Input.is_action_pressed("d")) - int(Input.is_action_pressed("a"))) * move_speed
-	var move_vert = (int(Input.is_action_pressed("s")) - int(Input.is_action_pressed("w"))) * move_speed
+	var move_hori = (int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))) * move_speed
+	var move_vert = (int(Input.is_action_pressed("down")) - int(Input.is_action_pressed("up"))) * move_speed
 	global_position.x += move_hori
 	global_position.y += move_vert
 	
