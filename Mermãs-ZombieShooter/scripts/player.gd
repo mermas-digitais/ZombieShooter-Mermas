@@ -75,6 +75,7 @@ func create_blood(zombie : entity):
 func do_hurt():
 	if(player_dead): return
 	life -= 1;
+	_ready()
 	if(life == 0): player_dead = true
 	$hurt_player.play()
 	can_hurt = false
