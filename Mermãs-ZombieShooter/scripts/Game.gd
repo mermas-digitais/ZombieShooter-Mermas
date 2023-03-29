@@ -8,8 +8,11 @@ var crossair = load("res://sprites/cross.png")
 var wave = 3
 var wave_times_this_num = 10
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 var point = 0
+=======
+>>>>>>> parent of e1b3ea0 (Player 2 add)
 =======
 >>>>>>> parent of e1b3ea0 (Player 2 add)
 
