@@ -20,7 +20,7 @@ initial_velocity = 75.63
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale_curve = SubResource( 2 )
-color = Color( 0.501961, 0.996078, 0.00784314, 1 )
+color = Color( 0.270588, 0.541176, 0, 1 )
 
 [node name="blood_particals" type="Particles2D"]
 modulate = Color( 0.501961, 0.996078, 0.00784314, 1 )

@@ -43,4 +43,18 @@ texture = ExtResource( 5 )
 [node name="Timer" type="Timer" parent="flash" index="0"]
 one_shot = true
 
+[node name="Label" type="Label" parent="." index="8"]
+margin_left = -34.0
+margin_top = 30.0
+margin_right = 24.0
+margin_bottom = 44.0
+rect_rotation = -88.9582
+text = "Player"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
 [connection signal="timeout" from="flash/Timer" to="." method="_on_Timer_timeout"]
