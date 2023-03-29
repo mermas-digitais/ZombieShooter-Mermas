@@ -6,15 +6,9 @@ var zombie = preload("res://objects/zombie.tscn")
 
 var crossair = load("res://sprites/cross.png")
 var wave = 3
-var wave_times_this_num = 10
-<<<<<<< HEAD
-<<<<<<< HEAD
+var wave_times_this_num = 5
 
 var point = 0
-=======
->>>>>>> parent of e1b3ea0 (Player 2 add)
-=======
->>>>>>> parent of e1b3ea0 (Player 2 add)
 
 enum game_state{
 	set_up_wave = 0,

@@ -20,6 +20,8 @@ cast_to = Vector2( 2000, 0 )
 collide_with_areas = true
 
 [node name="Sprite" type="Sprite" parent="." index="4"]
+modulate = Color( 1, 0.972549, 0.0235294, 1 )
+self_modulate = Color( 1, 0.972549, 0, 1 )
 position = Vector2( 51, 0 )
 texture = ExtResource( 3 )
 offset = Vector2( 150, 0 )
@@ -33,10 +35,26 @@ stream = ExtResource( 6 )
 
 [node name="flash" type="Sprite" parent="." index="7"]
 visible = false
+modulate = Color( 0.909804, 0.513726, 0.0117647, 1 )
+self_modulate = Color( 0.909804, 0.513726, 0.0117647, 1 )
 position = Vector2( 55.8279, 0.254028 )
 texture = ExtResource( 5 )
 
 [node name="Timer" type="Timer" parent="flash" index="0"]
 one_shot = true
+
+[node name="Label" type="Label" parent="." index="8"]
+margin_left = -34.0
+margin_top = 30.0
+margin_right = 24.0
+margin_bottom = 44.0
+rect_rotation = -88.9582
+text = "Player"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [connection signal="timeout" from="flash/Timer" to="." method="_on_Timer_timeout"]
