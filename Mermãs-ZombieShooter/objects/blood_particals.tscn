@@ -20,7 +20,11 @@ initial_velocity = 75.63
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale_curve = SubResource( 2 )
+<<<<<<< HEAD
 color = Color( 1, 0, 0, 1 )
+=======
+color = Color( 0.501961, 0.996078, 0.00784314, 1 )
+>>>>>>> parent of e1b3ea0 (Player 2 add)
 
 [node name="blood_particals" type="Particles2D"]
 emitting = false
