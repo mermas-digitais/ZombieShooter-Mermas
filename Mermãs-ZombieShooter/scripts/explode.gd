@@ -7,6 +7,7 @@ func _physics_process(delta):
 	spd = lerp(spd,0,0.05)
 	global_position += aim_dir * spd
 	
+	
 	if(frame > 10 and frame < 20):
 		for zombie in get_tree().get_nodes_in_group("zombie"):
 			if(global_position.distance_to(zombie.global_position) < 130):
