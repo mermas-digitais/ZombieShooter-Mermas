@@ -18,25 +18,21 @@ region = Rect2( 224, 112, 112, 112 )
 atlas = ExtResource( 1 )
 region = Rect2( 336, 112, 112, 112 )
 
-[sub_resource type="AtlasTexture" id=21]
+[sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 1 )
-region = Rect2( 336, 0, 112, 112 )
+region = Rect2( 448, 224, 112, 112 )
 
-[sub_resource type="AtlasTexture" id=22]
+[sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 112, 112 )
+region = Rect2( 560, 224, 112, 112 )
 
-[sub_resource type="AtlasTexture" id=23]
+[sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 1 )
-region = Rect2( 112, 0, 112, 112 )
+region = Rect2( 672, 224, 112, 112 )
 
-[sub_resource type="AtlasTexture" id=24]
+[sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 1 )
-region = Rect2( 224, 0, 112, 112 )
-
-[sub_resource type="AtlasTexture" id=25]
-atlas = ExtResource( 1 )
-region = Rect2( 336, 0, 112, 112 )
+region = Rect2( 784, 224, 112, 112 )
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 1 )
@@ -86,21 +82,25 @@ region = Rect2( 672, 336, 112, 112 )
 atlas = ExtResource( 1 )
 region = Rect2( 784, 336, 112, 112 )
 
-[sub_resource type="AtlasTexture" id=5]
+[sub_resource type="AtlasTexture" id=21]
 atlas = ExtResource( 1 )
-region = Rect2( 448, 224, 112, 112 )
+region = Rect2( 336, 0, 112, 112 )
 
-[sub_resource type="AtlasTexture" id=6]
+[sub_resource type="AtlasTexture" id=22]
 atlas = ExtResource( 1 )
-region = Rect2( 560, 224, 112, 112 )
+region = Rect2( 0, 0, 112, 112 )
 
-[sub_resource type="AtlasTexture" id=7]
+[sub_resource type="AtlasTexture" id=23]
 atlas = ExtResource( 1 )
-region = Rect2( 672, 224, 112, 112 )
+region = Rect2( 112, 0, 112, 112 )
 
-[sub_resource type="AtlasTexture" id=8]
+[sub_resource type="AtlasTexture" id=24]
 atlas = ExtResource( 1 )
-region = Rect2( 784, 224, 112, 112 )
+region = Rect2( 224, 0, 112, 112 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 1 )
+region = Rect2( 336, 0, 112, 112 )
 
 [sub_resource type="AtlasTexture" id=26]
 atlas = ExtResource( 1 )
@@ -141,15 +141,10 @@ animations = [ {
 "name": "player_dead",
 "speed": 10.0
 }, {
-"frames": [ SubResource( 21 ) ],
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
 "loop": true,
-"name": "player_idle",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
-"loop": true,
-"name": "player_walk",
-"speed": 10.0
+"name": "zombie2_walk",
+"speed": 6.0
 }, {
 "frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
 "loop": false,
@@ -166,10 +161,15 @@ animations = [ {
 "name": "zombie2_dead",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+"frames": [ SubResource( 21 ) ],
 "loop": true,
-"name": "zombie2_walk",
-"speed": 6.0
+"name": "player_idle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
+"loop": true,
+"name": "player_walk",
+"speed": 10.0
 }, {
 "frames": [ SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ) ],
 "loop": false,

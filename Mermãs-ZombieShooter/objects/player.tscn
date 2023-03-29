@@ -20,8 +20,6 @@ cast_to = Vector2( 2000, 0 )
 collide_with_areas = true
 
 [node name="Sprite" type="Sprite" parent="." index="4"]
-modulate = Color( 1, 0.972549, 0.0235294, 1 )
-self_modulate = Color( 1, 0.972549, 0, 1 )
 position = Vector2( 51, 0 )
 texture = ExtResource( 3 )
 offset = Vector2( 150, 0 )
@@ -35,8 +33,6 @@ stream = ExtResource( 6 )
 
 [node name="flash" type="Sprite" parent="." index="7"]
 visible = false
-modulate = Color( 0.909804, 0.513726, 0.0117647, 1 )
-self_modulate = Color( 0.909804, 0.513726, 0.0117647, 1 )
 position = Vector2( 55.8279, 0.254028 )
 texture = ExtResource( 5 )
 
